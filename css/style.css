@@ -57,18 +57,20 @@ header {
 
 .navigation li {
   list-style-type: none;
+  background-color: #04b4bb;
 }
 
 .navigation li:first-child a {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #d0e9e5;
 }
 
 .navigation li a {
   display: block;
   text-align: center;
   padding: .5em 1em;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #d0e9e5;
   text-decoration: none;
+  color: #fff;
 }
 
 .toggle-btn, .close-btn {
@@ -151,6 +153,7 @@ span {
   .navigation li {
     float: right;
     list-style-type: none;
+    background-color: inherit;
   }
   .navigation li:first-child a {
     border-top: none;
@@ -161,6 +164,7 @@ span {
     padding: .5em 1em;
     border-bottom: none;
     text-decoration: none;
+    color: #04b4bb;
   }
 }
 

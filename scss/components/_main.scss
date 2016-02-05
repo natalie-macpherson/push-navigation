@@ -45,15 +45,18 @@ header {
   }
   li {
     list-style-type: none;
+    background-color: $blue;
+
     &:first-child a {
-      border-top: 1px solid $light-grey;
+      border-top: 1px solid $light-blue;
     }
     a{
       display: block;
       text-align: center;
       padding: .5em 1em;
-      border-bottom: 1px solid $light-grey;
+      border-bottom: 1px solid $light-blue;
       text-decoration: none;
+      color: $white;
     }
   }
 } //.navigation
@@ -138,6 +141,7 @@ span {
     li {
       float: right;
       list-style-type: none;
+      background-color: inherit;
       &:first-child a {
         border-top: none;
       }
@@ -147,6 +151,7 @@ span {
         padding: .5em 1em;
         border-bottom: none;
         text-decoration: none;
+        color: $blue;
       }
     }
   }
