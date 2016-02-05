@@ -136,12 +136,14 @@ span {
   .navigation {
     padding-right: 5em;
     ul {
-      padding: 0;
+      padding-right: 1em;
+      float: right;
     }
     li {
-      float: right;
+
       list-style-type: none;
       background-color: inherit;
+      display: inline-block;
       &:first-child a {
         border-top: none;
       }
