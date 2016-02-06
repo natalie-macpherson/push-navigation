@@ -38,9 +38,14 @@ header {
   width: 100%;
 }
 
+.header {
+  background-color: $blue;
+}
+
 .logo {
-  width:35%;
+  width:45%;
   display: inline-block;
+  padding: 1em 0 0 .25em;
 }
 
 .toggle-btn {
@@ -71,19 +76,14 @@ header {
   }
 } //.navigation
 
-.toggle-btn, .close-btn {
-  color: $text-color;
-  text-decoration: none;
-  height: 40px;
-  width: 40px;
-  &:before {
-    height: 40px;
-    width: 40px;
-    display: inline-block;
-    padding: 13px 11px;
-    border: 1px solid $light-grey;
+.toggle-btn, {
+@include btn ($white)
   }
+
+.close-btn {
+  @include btn ($text-color)
 }
+
 
 span {
   @include element-invisible;
@@ -142,32 +142,36 @@ span {
       dfloat: right;
     }
   }*/
+  .logo {
+    width:50%;
+   display: inline-block;
+  }
 
   .navigation {
     padding-right: 5em;
     ul {
       padding-right: 1em;
       float: right;
-    }
+      padding-top: 3em;
+    }/* closes ul*/
     li {
-
       list-style-type: none;
-      background-color: inherit;
+      background-color: transparent;
       display: inline-block;
       &:first-child a {
         border-top: none;
-      }
+      } /* closes first-child a*/
       a{
         display: block;
         text-align: center;
         padding: .5em 1em;
         border-bottom: none;
         text-decoration: none;
-        color: $blue;
-      }
-    }
-  }
-}
+        color: $white;
+      } /* closes a*/
+    } /* closes li*/
+  } /* closes .nav*/
+} /* closes media query*/
 
 body.script .navigation {
   position: static;
