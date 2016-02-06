@@ -33,6 +33,16 @@ header {
   position: relative;
 }
 
+.img-flex {
+  display: block;
+  width: 100%;
+}
+
+.logo {
+  width:35%;
+  display: inline-block;
+}
+
 .toggle-btn {
   position: absolute;
   right: 1em;
@@ -46,7 +56,7 @@ header {
   li {
     list-style-type: none;
     background-color: $blue;
-
+    text-transform: uppercase;
     &:first-child a {
       border-top: 1px solid $light-blue;
     }
