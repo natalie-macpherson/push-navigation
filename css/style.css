@@ -1076,6 +1076,8 @@ header {
 
 .header {
   background-color: #04b4bb;
+  background-image: url(../img/clouds.jpg);
+  background-size: cover;
 }
 
 .logo {
