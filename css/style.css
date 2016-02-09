@@ -1080,21 +1080,25 @@ header {
 
 .logo {
   width: 45%;
-  display: inline-block;
   padding: 1em 0 0 .50em;
+  display: inline-block;
 }
 
-@media only screen and (max-width: 60em) {
+@media only screen and (min-width: 25em) {
   .logo {
-    width: 50%;
-    display: inline-block;
+    width: 25%;
   }
 }
 
-@media only screen and (max-width: 38em) {
+@media only screen and (min-width: 38em) {
   .logo {
-    width: 30%;
-    display: inline-block;
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  .logo {
+    width: 45%;
   }
 }
 
@@ -1132,6 +1136,7 @@ header {
   text-decoration: none;
   height: 40px;
   width: 40px;
+  padding-top: .5em;
 }
 
 .toggle-btn:before {
@@ -1146,6 +1151,7 @@ header {
   text-decoration: none;
   height: 40px;
   width: 40px;
+  padding-top: .5em;
 }
 
 .close-btn:before {

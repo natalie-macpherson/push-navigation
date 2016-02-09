@@ -44,15 +44,16 @@ header {
 
 .logo {
   width:45%;
-  display: inline-block;
   padding: 1em 0 0 .50em;
-  @media only screen and (max-width: 60em) {
-    width:50%;
-    display: inline-block;
+  display: inline-block;
+  @media only screen and (min-width: 25em) {
+    width:25%;
   }
-  @media only screen and (max-width: 38em) {
-    width:30%;
-    display: inline-block;
+  @media only screen and (min-width: 38em) {
+    width:70%;
+  }
+  @media only screen and (min-width: 60em) {
+    width:45%;
   }
 }
 
