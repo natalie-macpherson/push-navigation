@@ -1084,6 +1084,20 @@ header {
   padding: 1em 0 0 .50em;
 }
 
+@media only screen and (max-width: 60em) {
+  .logo {
+    width: 50%;
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 38em) {
+  .logo {
+    width: 30%;
+    display: inline-block;
+  }
+}
+
 .toggle-btn {
   position: absolute;
   right: 1em;
@@ -1125,7 +1139,6 @@ header {
   width: 40px;
   display: inline-block;
   padding: 13px 11px;
-  border: 1px solid #ccc;
 }
 
 .close-btn {
@@ -1140,7 +1153,6 @@ header {
   width: 40px;
   display: inline-block;
   padding: 13px 11px;
-  border: 1px solid #ccc;
 }
 
 span {
@@ -1193,15 +1205,6 @@ span {
 @media only screen and (min-width: 60em) {
   .toggle-btn, .close-btn {
     display: none;
-  }
-  /*.navigation {
-    li {
-      dfloat: right;
-    }
-  }*/
-  .logo {
-    width: 50%;
-    display: inline-block;
   }
   .navigation {
     padding-right: 5em;
