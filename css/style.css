@@ -1128,9 +1128,12 @@ header {
   display: block;
   text-align: center;
   padding: .5em 1em;
-  border-bottom: 1px solid #d0e9e5;
   text-decoration: none;
   color: #fff;
+}
+
+.navigation li a:hover {
+  color: black;
 }
 
 .toggle-btn {

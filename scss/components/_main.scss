@@ -80,9 +80,11 @@ header {
       display: block;
       text-align: center;
       padding: .5em 1em;
-      border-bottom: 1px solid $light-blue;
       text-decoration: none;
       color: $white;
+      &:hover {
+        color: black;
+      }
     }
   }
 } //.navigation
