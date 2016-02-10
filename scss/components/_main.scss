@@ -33,6 +33,28 @@ header {
   position: relative;
 }
 
+.billboard {
+  background-image: url(../img/pnn-billboard.jpg);
+  background-size: cover;
+  height: 233px;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  @media only screen and (min-width: 25em) {
+    height: 360px;
+  }
+  @media only screen and (min-width: 38em) {
+    height: 560px;
+  }
+  @media only screen and (min-width: 60em) {
+    height: 650px;
+  }
+   @media only screen and (min-width: 90em) {
+    height: 850px;
+
+  }
+}
+
 .img-flex {
   display: block;
   width: 100%;
